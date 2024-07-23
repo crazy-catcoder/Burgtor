@@ -145,11 +145,18 @@
   }
   
   body {
+    background: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
     min-height: 100vh;
+  }
+
+  .toggle-theme {
+    background: var(--bg);
+    color: var(--text-color );
+    caret-color: var(--text-color);
   }
   
   * {
