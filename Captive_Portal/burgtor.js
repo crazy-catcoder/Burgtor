@@ -15,8 +15,17 @@ function toggle_theme() {
     // Reverse logic on the button text, so that users can turn
     // the theme back on:
     toggle.innerText = 'Dark mode';
+    localStorage.removeItem('dark-mode');
   } else {
     document.body.classList.add('dark-mode');
     toggle.innerText = 'White mode';
+    localStorage.setItem('dark-mode', true);
   }
+}
+
+let toggle = document.querySelector('.toggle-theme');
+
+if (localStorage.getItem('dark-mode')) {
+  document.body.classList.add('dark-mode');
+  toggle.innerText = 'White mode';
 }
