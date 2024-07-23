@@ -1,3 +1,13 @@
+:root {
+  --bg: #FFFFFF;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --bg: #000000;
+  --text-color: #FFFFFF;
+}
+
 /* cyrillic-ext */
 @font-face {
     font-family: 'Inter';
@@ -152,7 +162,7 @@
   .board-ab5daad1ec65 {
     position: relative;
     width: 100%;
-    background: #FFFFFF;
+    background: var(--bg);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -170,7 +180,7 @@
     position: relative;
     width: 177px;
     height: 50px;
-    background: #000000;
+    background: var(--text-color);
     border-radius: 6px;
     flex-shrink: 0;
   }
@@ -205,14 +215,14 @@
     text-align: center;
   }
   .dooropene-ab5dc0253c55 .root-0-paragraph-set-0-paragraph-0-text-0 {
-    color: rgba(255, 255, 255, 1);
+    color: var(--bg);
     text-transform: uppercase;
     
     line-break: auto;
     overflow-wrap: initial;
     white-space: break-spaces;
     text-rendering: geometricPrecision;
-    caret-color: rgba(255, 255, 255, 1);
+    caret-color: var(--bg);
     text-decoration: none;
     letter-spacing: 1px;
     font-size: 13px;
@@ -250,14 +260,14 @@
     text-align: center;
   }
   .heading-ab5f838d9986 .root-0-paragraph-set-0-paragraph-0-text-0 {
-    color: rgba(0, 0, 0, 1);
+    color: var(--text-color);
     text-transform: none;
     
     line-break: auto;
     overflow-wrap: initial;
     white-space: pre;
     text-rendering: geometricPrecision;
-    caret-color: rgba(0, 0, 0, 1);
+    caret-color: var(--text-color);
     text-decoration: none;
     letter-spacing: 0px;
     font-size: 24px;
